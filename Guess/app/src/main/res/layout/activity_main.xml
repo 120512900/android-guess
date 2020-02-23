@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="The computer only considers a number from 1 to 9999"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#888888"
+
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        />
+
+    <ImageButton
+        android:layout_centerHorizontal="true"
+        android:id="@+id/up"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/et1"
+        android:layout_below="@+id/up"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+       android:cursorVisible="false"
+        android:background="#ffffffff"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        />
+
+    <ImageButton
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et1"
+        android:id="@+id/down"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageButton
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/down"
+        android:layout_marginTop="100dp"
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a"
+        android:onClick="click"
+
+        />
+
+
+
+</RelativeLayout>
