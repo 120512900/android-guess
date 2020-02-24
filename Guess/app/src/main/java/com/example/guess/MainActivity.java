@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void pickrandom(){
         Random rand =new Random();
-        point=rand.nextInt(10000);
+        point=rand.nextInt(1000);
 
 
     }
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             handler.postDelayed(new Runnable(){
                 @Override
                 public void run() {
-                    showText.setText("The computer only considers a number from 1 to 9999");
+                    showText.setText("The computer only considers a number from 1 to 1000");
                     up.getBackground().setAlpha(0);
                     dowm.getBackground().setAlpha(0);
                     inText.setEnabled(true);
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 handler.postDelayed(new Runnable(){
                     @Override
                     public void run() {
-                        showText.setText("The computer only considers a number from 1 to 9999");
+                        showText.setText("The computer only considers a number from 1 to 1000");
                         up.getBackground().setAlpha(0);
                         dowm.getBackground().setAlpha(0);
                         inText.setEnabled(true);
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                handler.postDelayed(new Runnable(){
                    @Override
                    public void run() {
-                       showText.setText("The computer only considers a number from 1 to 9999");
+                       showText.setText("The computer only considers a number from 1 to 1000");
                        up.getBackground().setAlpha(0);
                         dowm.getBackground().setAlpha(0);
                        inText.setEnabled(true);
